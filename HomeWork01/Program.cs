@@ -9,7 +9,7 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
 
-Console.WriteLine("Input first number: ");
+/*Console.WriteLine("Input first number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Input second number: ");
@@ -27,6 +27,7 @@ if(num1 == num2)
 {
     Console.WriteLine($"The numbers are equal, {num1} = {num2}");
 }
+*/
 /*
 Задача 4.
 Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -35,6 +36,27 @@ if(num1 == num2)
 44 5 78 -> 78
 22 3 9 -> 22
 */
+
+Console.WriteLine("Input first number: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Input second number: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Input third number: ");
+int num3 = Convert.ToInt32(Console.ReadLine());
+
+int current = num1;
+
+if(num2 > current)
+{
+    current = num2;
+}
+if (num3 > current)
+{
+    current = num3;
+}
+Console.WriteLine($"max = {current}");
 
 /*
 Задача 6.

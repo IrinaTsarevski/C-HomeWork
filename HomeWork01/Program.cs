@@ -9,7 +9,8 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
 
-/*Console.WriteLine("Input first number: ");
+/*
+Console.WriteLine("Input first number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("Input second number: ");
@@ -28,6 +29,7 @@ if(num1 == num2)
     Console.WriteLine($"The numbers are equal, {num1} = {num2}");
 }
 */
+
 /*
 Задача 4.
 Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
@@ -36,6 +38,7 @@ if(num1 == num2)
 44 5 78 -> 78
 22 3 9 -> 22
 */
+
 /*
 Console.WriteLine("Input first number: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
@@ -58,6 +61,7 @@ if (num3 > current)
 }
 Console.WriteLine($"max = {current}");
 */
+
 /*
 Задача 6.
 Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
@@ -67,6 +71,7 @@ Console.WriteLine($"max = {current}");
 7 -> нет
 */
 
+/*
 Console.WriteLine("Input your number to find if it's even! : ");
 int num = Convert.ToInt32(Console.ReadLine());
 
@@ -78,6 +83,8 @@ else
 {
     Console.WriteLine($"Unfortunatly,{num} is't even, try again with another number!");
 }
+*/
+
 /*
 Задача 8.
 Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
@@ -85,3 +92,16 @@ else
 5 -> 2, 4
 8 -> 2, 4, 6, 8
 */
+
+Console.WriteLine("Input number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int current = 1;
+while(current <= num)
+{
+    if(current % 2 == 0)
+    {
+        Console.Write(current + " ");
+    }
+    current++;   
+}
